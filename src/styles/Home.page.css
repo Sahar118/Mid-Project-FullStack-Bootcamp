@@ -1,0 +1,14 @@
+.home-page{
+    height: 90vh;
+    width: 100%;
+
+}
+
+.home-container{
+    height: 80%;
+    width: 80%;
+    margin: auto ;
+    background: url(/src/assest/background.jpg) no-repeat center center/cover;
+    position: relative;
+    top: 10%;
+}
