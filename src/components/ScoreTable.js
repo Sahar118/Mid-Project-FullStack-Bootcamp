@@ -1,10 +1,14 @@
-// import React, { useState } from 'react'
+
 import { Table } from 'semantic-ui-react';
-import React, { useState } from "react";
-
+import React, { useState, useRef } from "react";
+import { useReactToPrint } from 'react-to-print';
 const ScoreTable = () => {
-
-
+    const componentRef = useRef();
+    const handlePrint = useReactToPrint({
+        content: () => componentRef.current,
+        documentTitle: 'emp-data',
+        onAfterPrint: () => alert('ההדפסה הצליחה')
+    })
     const [letterRowScore, setLetterRowScore] = useState(null)
     const [letterRegulatoryGrade, setLetterRegulatoryGrade] = useState(null)
 
@@ -73,7 +77,7 @@ const ScoreTable = () => {
 
 
     return (
-        <div>
+        <div ref={componentRef} style={{ width: '100%', heigth: window.innerHeight }}>
             <Table celled>
 
                 <Table.Header>
@@ -233,7 +237,7 @@ const ScoreTable = () => {
 
                 </Table.Body>
             </Table>
-
+            <button variant="success" onClick={handlePrint}>הדפס  </button>
         </div>
 
 

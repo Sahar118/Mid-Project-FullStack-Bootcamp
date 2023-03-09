@@ -24,3 +24,14 @@ p{
   font-size: 20px;
   line-height: 150%;
 }
+
+.welcome-title{
+  font-size: 85px;
+}
+
+.suggestion{
+  cursor: pointer;
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+  border-left:1px solid black;
+}

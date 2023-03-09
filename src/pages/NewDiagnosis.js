@@ -14,3 +14,4 @@ const NewDiagnosis = () => {
 }
 
 export default NewDiagnosis
+

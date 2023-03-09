@@ -6,6 +6,7 @@ import Error from './Error';
 import EditParagraphs from './EditParagraphs'
 import SaveParagraphs from './SaveParagraphs'
 import ConcludingParagraphs from './ConcludingParagraphs'
+import Glossary from './Glossary'
 
 
 export {
@@ -16,5 +17,6 @@ export {
     EditParagraphs,
     SaveParagraphs,
     ConcludingParagraphs,
+    Glossary,
     Error
 }

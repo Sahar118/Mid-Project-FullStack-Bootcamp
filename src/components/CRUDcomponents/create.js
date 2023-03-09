@@ -42,65 +42,71 @@ const Create = () => {
 
     return (
         <div className='add-new-product'>
-
             <Form>
-                <h1> פרטים אישיים </h1>
-                <Form.Field>
-                    <label><span> שם הנבדק/ת </span></label>
-                    <input
-                        placeholder='שם פרטי ומשפחה'
-                        name='name'
-                        onChange={(e) => setName(e.target.value)}
-                    />
-                </Form.Field>
+                <div className='personal-info-div'>
+                    <h1> פרטים אישיים </h1>
+                    <Form.Field>
+                        <label><span> שם הנבדק/ת </span></label>
+                        <input
+                            placeholder='שם פרטי ומשפחה'
+                            name='name'
+                            required="שדה חובה"
+                            onChange={(e) => setName(e.target.value)}
+                        />
+                    </Form.Field>
 
-                <Form.Field>
-                    <label><span> ת.ז</span></label>
-                    <input
-                        placeholder='ת.ז'
-                        name="Id"
-                        type='text'
-                        onChange={(e) => setNewId(e.target.value)}
-                    />
-                </Form.Field>
+                    <Form.Field>
+                        <label><span> ת.ז</span></label>
+                        <input
+                            placeholder='ת.ז'
+                            name="Id"
+                            type='number'
+                            required="שדה חובה"
+                            onChange={(e) => setNewId(e.target.value)}
+                        />
+                    </Form.Field>
 
-                <Form.Field>
-                    <label><span>תאריך לידה : </span></label>
-                    <input
-                        placeholder='תאריך לידה:'
-                        name='birthDate'
-                        type='date'
-                        onChange={(e) => setBirthDate(e.target.value)}
-                    />
-                </Form.Field>
+                    <Form.Field>
+                        <label><span>תאריך לידה : </span></label>
+                        <input
+                            placeholder='תאריך לידה:'
+                            name='birthDate'
+                            type='date'
+                            required="שדה חובה"
+                            onChange={(e) => setBirthDate(e.target.value)}
+                        />
+                    </Form.Field>
 
-                <Form.Field>
-                    <label><span> כיתה:</span></label>
-                    <input
-                        placeholder='כיתה'
-                        name='grade'
-                        onChange={(e) => setGrade(e.target.value)}
-                    />
-                </Form.Field>
+                    <Form.Field>
+                        <label><span> כיתה:</span></label>
+                        <input
+                            placeholder='כיתה'
+                            name='grade'
+                            required="שדה חובה"
+                            onChange={(e) => setGrade(e.target.value)}
+                        />
+                    </Form.Field>
 
-                <Form.Field>
-                    <label><span> בית ספר:</span></label>
-                    <input
-                        placeholder="בית ספר"
-                        name='school'
-                        onChange={(e) => setSchool(e.target.value)}
-                    />
-                </Form.Field>
+                    <Form.Field>
+                        <label><span> בית ספר:</span></label>
+                        <input
+                            placeholder="בית ספר"
+                            name='school'
+                            required="שדה חובה"
+                            onChange={(e) => setSchool(e.target.value)}
+                        />
+                    </Form.Field>
 
-                <Form.Field>
-                    <label><span> כתובת:</span></label>
-                    <input
-                        placeholder='כתובת'
-                        name='address'
-                        onChange={(e) => setAddress(e.target.value)}
-                    />
-                </Form.Field>
-
+                    <Form.Field>
+                        <label><span> כתובת:</span></label>
+                        <input
+                            placeholder='כתובת'
+                            name='address'
+                            required="שדה חובה"
+                            onChange={(e) => setAddress(e.target.value)}
+                        />
+                    </Form.Field>
+                </div>
 
                 <h1>מסקנה כללית לגבי תפקוד התלמיד ביחס למצופה מבני גילו:</h1>
                 <Form.Field>

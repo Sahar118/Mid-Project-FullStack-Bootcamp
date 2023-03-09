@@ -69,6 +69,7 @@ export default function Update() {
                         placeholder='שם פרטי ומשפחה'
                         value={name}
                         name='name'
+                        required="שדה חובה"
                         onChange={(e) => setName(e.target.value)}
 
                     />
@@ -79,7 +80,8 @@ export default function Update() {
                     <input
                         placeholder='ת.ז'
                         name="Id"
-                        type='text'
+                        type='number'
+                        required="שדה חובה"
                         value={newId}
                         onChange={(e) => setNewId(e.target.value)}
                     />
@@ -91,8 +93,8 @@ export default function Update() {
                         placeholder='תאריך לידה:'
                         name='birthDate'
                         type='date'
+                        required="שדה חובה"
                         value={birthDate}
-
                         onChange={(e) => setBirthDate(e.target.value)}
                     />
                 </Form.Field>
@@ -103,7 +105,7 @@ export default function Update() {
                         placeholder='כיתה'
                         name='grade'
                         value={grade}
-
+                        required="שדה חובה"
                         onChange={(e) => setGrade(e.target.value)}
                     />
                 </Form.Field>
@@ -114,7 +116,7 @@ export default function Update() {
                         placeholder="בית ספר"
                         name='school'
                         value={school}
-
+                        required="שדה חובה"
                         onChange={(e) => setSchool(e.target.value)}
                     />
                 </Form.Field>
@@ -125,7 +127,7 @@ export default function Update() {
                         placeholder='כתובת'
                         name='address'
                         value={address}
-
+                        required="שדה חובה"
                         onChange={(e) => setAddress(e.target.value)}
                     />
                 </Form.Field>
